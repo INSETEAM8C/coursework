@@ -1,4 +1,4 @@
-Authors: Jake Hedges, Callum Young, Alan Chen, Singlahang Patangwa
+Authors: Jake Hedges, Callum Younger, Alan Chen, Singlahang Patangwa
 Version: 1.0
 Last edited: 25/01/2016
 
