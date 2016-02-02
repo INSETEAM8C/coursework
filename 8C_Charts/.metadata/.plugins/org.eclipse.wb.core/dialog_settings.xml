@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.core.model.util.RenameConvertSupport$RenameDialog">
+		<item value="158" key="x"/>
+		<item value="525" key="width"/>
+		<item value="223" key="y"/>
+		<item value="281" key="height"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.ComponentAddDialog">
+		<item value="66" key="x"/>
+		<item value="617" key="width"/>
+		<item value="179" key="y"/>
+		<item value="369" key="height"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.ImportArchiveDialog">
+		<item value="82" key="x"/>
+		<item value="967" key="width"/>
+		<item value="143" key="y"/>
+		<item value="441" key="height"/>
+		<list key="HISTORY_JAR_LIST">
+			<item value="C:\Users\Jake\Documents\GitHub\coursework\8C_Charts\Library files\JPopupCalendarSWT-V02-02pre_full\JPopupCalendarSWT\lib\JPopupCalendar.jar"/>
+			<item value="C:\Users\Jake\Documents\GitHub\coursework\8C_Charts\jcalendarbutton-1.4.5.jar"/>
+			<item value="C:\Users\Jake\Desktop\Downloads\jdatepicker-1.3.4.jar"/>
+		</list>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.PaletteManagerDialog">
+		<item value="158" key="x"/>
+		<item value="525" key="width"/>
+		<item value="106" key="y"/>
+		<item value="515" key="height"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.CategoryAddDialog">
+		<item value="79" key="x"/>
+		<item value="525" key="width"/>
+		<item value="170" key="y"/>
+		<item value="388" key="height"/>
+	</section>
+</section>

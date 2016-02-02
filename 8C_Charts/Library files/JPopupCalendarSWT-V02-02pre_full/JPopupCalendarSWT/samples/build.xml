@@ -1,0 +1,124 @@
+<project name="samples" basedir=".">
+   <description>Ant file to build and run the sample(s)</description>
+
+   <!-- This sets the location of the swt.jar file. Please change that to
+   the appropriate location -->
+   <property name="swtdir" value="C:\Java\SWT\swt-3.1"/>
+   <property name="swtjar" value="${swtdir}\swt.jar"/>
+   <property name="swtpi" value="${swtdir}\swt-pi.jar"/>
+
+   <!-- Changes below this line at your own risk! -->
+   <property name="package" value="net/cwroethel/swt/JPopupCalendar"/>
+   <path id="JPopupCalendar.class.path">
+      <pathelement path="${classpath}"/>
+      <pathelement path="../lib/JPopupCalendar.jar"/>
+      <pathelement path="${swtjar}"/>
+      <pathelement path="${swtpi}"/>
+      <pathelement path="./"/>
+   </path>
+
+
+   <target name="init">
+      <tstamp/>
+   </target>
+
+
+   <!-- Build and run SimpleExample1 -->
+   <target name="buildExample1" depends="init"
+         description="compile SimpleExample1">
+      <javac srcdir="./" destdir="./">
+         <classpath refid="JPopupCalendar.class.path"/>
+         <include name="SimpleExample1.java"/>
+      </javac>
+   </target>
+
+   <target name="SimpleExample1" depends="buildExample1"
+         description="run SimpleExample1">
+      <java classname="SimpleExample1" fork="true" jvm="java">
+         <jvmarg value="-Djava.library.path=${swtdir}"/>
+         <classpath refid="JPopupCalendar.class.path"/>
+      </java>
+   </target>
+
+
+   <!-- Build and run SimpleExample2 -->
+   <target name="buildExample2" depends="init"
+         description="compile SimpleExample2">
+      <javac srcdir="./" destdir="./" debug="true">
+         <classpath refid="JPopupCalendar.class.path"/>
+         <include name="SimpleExample2.java"/>
+      </javac>
+   </target>
+
+   <target name="SimpleExample2" depends="buildExample2"
+         description="run SimpleExample2">
+      <java classname="SimpleExample2" fork="true" jvm="java">
+         <jvmarg value="-Djava.library.path=${swtdir}"/>
+         <classpath refid="JPopupCalendar.class.path"/>
+      </java>
+   </target>
+
+
+   <!-- Build and run SimpleExample3 -->
+   <target name="buildExample3" depends="init"
+         description="compile SimpleExample3">
+      <javac srcdir="./" destdir="./">
+         <classpath refid="JPopupCalendar.class.path"/>
+         <include name="SimpleExample3.java"/>
+      </javac>
+   </target>
+
+   <target name="SimpleExample3" depends="buildExample3"
+         description="run SimpleExample3">
+      <java classname="SimpleExample3" fork="true" jvm="java">
+         <jvmarg value="-Djava.library.path=${swtdir}"/>
+         <classpath refid="JPopupCalendar.class.path"/>
+      </java>
+   </target>
+
+
+   <!-- Build and run SimpleExample3 -->
+   <target name="buildDateChooserExample1" depends="init"
+         description="compile DateChooserExample1">
+      <javac srcdir="./" destdir="./">
+         <classpath refid="JPopupCalendar.class.path"/>
+         <include name="DateChooserExample1.java"/>
+      </javac>
+   </target>
+
+   <target name="DateChooserExample1" depends="buildDateChooserExample1"
+         description="run DateChooserExample1">
+      <java classname="DateChooserExample1" fork="true" jvm="java">
+         <jvmarg value="-Djava.library.path=${swtdir}"/>
+         <classpath refid="JPopupCalendar.class.path"/>
+      </java>
+   </target>
+
+
+   <!-- Build and run PopupShellExample -->
+   <target name="buildPopupShellExample" depends="init"
+         description="compile PopupShellExample">
+      <javac srcdir="./" destdir="./">
+         <classpath refid="JPopupCalendar.class.path"/>
+         <include name="PopupShellExample.java"/>
+      </javac>
+   </target>
+
+   <target name="PopupShellExample" depends="buildPopupShellExample"
+         description="run SimpleExample1">
+      <java classname="PopupShellExample" fork="true" jvm="java">
+         <jvmarg value="-Djava.library.path=${swtdir}"/>
+         <classpath refid="JPopupCalendar.class.path"/>
+      </java>
+   </target>
+
+
+   <target name="clean" description="remove the class files">
+      <delete>
+         <fileset dir="./" includes="*.class" />
+      </delete>
+   </target>
+
+
+</project>
+

@@ -1,0 +1,36 @@
+package coursework;
+
+public class formatMethod {
+
+	/**
+	 * First of two methods for formatting text
+	 * @param String from WBT_constructor (taken from file)
+	 * @return Returns a formatted string, to be entered into a text area.
+	 */
+	public String format1(String k){
+		String[] splitKey = k.split(",", 2);
+		int numSpaces = 79 - splitKey[1].length();
+		for(int space = 0; space < numSpaces; space++)
+		String numSpacesToImplement = " " * numSpaces;
+		splitKey[1] = "        " + splitKey[1] + numSpacesToImplement;
+		k = splitKey[0] + splitKey[1];
+		k = k.replaceAll(",", "");
+		k = k.replaceAll("\"", "");
+		return k;
+	}
+
+	/**
+	 * Second of two methods for formatting text
+	 * @param String from WBT_constructor (taken from file)
+	 * @return Returns a formatted string, to be entered into a text area.
+	 */
+	public String format2(String i){
+		String[] splitInfo = i.split(",", 3);
+		splitInfo[0] = "   " + splitInfo[0] + "                               ";
+		splitInfo[1] = " " + splitInfo[1] + "                                ";
+		i = splitInfo[0] + splitInfo[1] + splitInfo[2];
+		i = i.replaceAll(",", "");
+		i = i.replaceAll("\"", "");
+		return i;
+	}
+}

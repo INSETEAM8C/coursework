@@ -1,0 +1,33 @@
+package coursework;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+public class refreshT {
+
+	public void refresh(){
+		try{
+			ArrayList<String> key = new ArrayList<String>();
+			ArrayList<String> info = new ArrayList<String>();
+			BufferedReader b1 = new BufferedReader(new FileReader("C:\\Users\\Jake\\Documents\\GitHub\\coursework\\8C_Charts\\coursework\\Test files\\origDocTest.txt"));
+			BufferedReader b2 = new BufferedReader(new FileReader("C:\\Users\\Jake\\Documents\\GitHub\\coursework\\8C_Charts\\coursework\\Test files\\secondaryInfo.txt"));
+			String keyLine = b1.readLine();
+			String infoLine = b2.readLine();
+			while(keyLine != null){
+				key.add(keyLine);
+				info.add(infoLine);
+				JOptionPane.showMessageDialog(frame, key + infoLine);
+
+			}
+			int keyLen = keyLine.length();
+			for(int toLoop = 0; toLoop <= keyLen; toLoop++){
+				String k = key.get(toLoop);
+				String i = info.get(toLoop);
+				WBTTaskTextArea.setText(k + i);
+		}}catch (Exception RefreshProblem){}
+	}
+	
+}

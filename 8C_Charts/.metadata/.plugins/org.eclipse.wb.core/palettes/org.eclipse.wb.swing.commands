@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<moveEntry
+		id="org.eclipse.wb.swing.components javax.swing.JEditorPane"
+		category="org.eclipse.wb.swing.components"
+		nextEntry="org.eclipse.wb.swing.components javax.swing.JTable"/>
+	<addCategory
+		id="jcalendarbutton-1.4.5_1454258347292"
+		name="jcalendarbutton-1.4.5"
+		description="Container with import elements from C:\Users\Jake\Documents\GitHub\coursework\8C_Charts\jcalendarbutton-1.4.5.jar"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="org.sourceforge.jcalendarbutton.JCalendarButton_1454258347293"
+		name="JCalendarButton"
+		description="Custom component: org.sourceforge.jcalendarbutton.JCalendarButton"
+		visible="true"
+		class="org.sourceforge.jcalendarbutton.JCalendarButton"
+		category="jcalendarbutton-1.4.5_1454258347292"/>
+	<addComponent
+		id="org.sourceforge.jcalendarbutton.JCalendarPopup_1454258347293"
+		name="JCalendarPopup"
+		description="Custom component: org.sourceforge.jcalendarbutton.JCalendarPopup"
+		visible="true"
+		class="org.sourceforge.jcalendarbutton.JCalendarPopup"
+		category="jcalendarbutton-1.4.5_1454258347292"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePickerImpl_1454258543548"
+		name="JDatePickerImpl"
+		description="Custom component: org.jdatepicker.impl.JDatePickerImpl"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePickerImpl"
+		category="org.eclipse.wb.swing.components"/>
+	<addComponent
+		id="org.jdatepicker.AbstractDateModel_1454258598383"
+		name="AbstractDateModel"
+		description="Custom component: org.jdatepicker.AbstractDateModel"
+		visible="true"
+		class="org.jdatepicker.AbstractDateModel"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.DateModel_1454258598384"
+		name="DateModel"
+		description="Custom component: org.jdatepicker.DateModel"
+		visible="true"
+		class="org.jdatepicker.DateModel"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.graphics.JNextIcon_1454258598384"
+		name="JNextIcon"
+		description="Custom component: org.jdatepicker.graphics.JNextIcon"
+		visible="true"
+		class="org.jdatepicker.graphics.JNextIcon"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.graphics.JPreviousIcon_1454258598384"
+		name="JPreviousIcon"
+		description="Custom component: org.jdatepicker.graphics.JPreviousIcon"
+		visible="true"
+		class="org.jdatepicker.graphics.JPreviousIcon"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.DateComponentFormatter_1454258598384"
+		name="DateComponentFormatter"
+		description="Custom component: org.jdatepicker.impl.DateComponentFormatter"
+		visible="true"
+		class="org.jdatepicker.impl.DateComponentFormatter"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePanelImpl_1454258598384"
+		name="JDatePanelImpl"
+		description="Custom component: org.jdatepicker.impl.JDatePanelImpl"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePanelImpl"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePanelImpl$1_1454258598384"
+		name="1"
+		description="Custom component: org.jdatepicker.impl.JDatePanelImpl$1"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePanelImpl$1"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePanelImpl$InternalCalendarModel_1454258598384"
+		name="InternalCalendarModel"
+		description="Custom component: org.jdatepicker.impl.JDatePanelImpl$InternalCalendarModel"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePanelImpl$InternalCalendarModel"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePanelImpl$InternalController_1454258598384"
+		name="InternalController"
+		description="Custom component: org.jdatepicker.impl.JDatePanelImpl$InternalController"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePanelImpl$InternalController"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePanelImpl$InternalTableCellRenderer_1454258598384"
+		name="InternalTableCellRenderer"
+		description="Custom component: org.jdatepicker.impl.JDatePanelImpl$InternalTableCellRenderer"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePanelImpl$InternalTableCellRenderer"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePanelImpl$InternalView_1454258598384"
+		name="InternalView"
+		description="Custom component: org.jdatepicker.impl.JDatePanelImpl$InternalView"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePanelImpl$InternalView"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePickerImpl_1454258598384"
+		name="JDatePickerImpl"
+		description="Custom component: org.jdatepicker.impl.JDatePickerImpl"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePickerImpl"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePickerImpl$1_1454258598384"
+		name="1"
+		description="Custom component: org.jdatepicker.impl.JDatePickerImpl$1"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePickerImpl$1"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.JDatePickerImpl$InternalEventHandler_1454258598384"
+		name="InternalEventHandler"
+		description="Custom component: org.jdatepicker.impl.JDatePickerImpl$InternalEventHandler"
+		visible="true"
+		class="org.jdatepicker.impl.JDatePickerImpl$InternalEventHandler"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.SqlDateModel_1454258598384"
+		name="SqlDateModel"
+		description="Custom component: org.jdatepicker.impl.SqlDateModel"
+		visible="true"
+		class="org.jdatepicker.impl.SqlDateModel"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.UtilCalendarModel_1454258598384"
+		name="UtilCalendarModel"
+		description="Custom component: org.jdatepicker.impl.UtilCalendarModel"
+		visible="true"
+		class="org.jdatepicker.impl.UtilCalendarModel"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.impl.UtilDateModel_1454258598384"
+		name="UtilDateModel"
+		description="Custom component: org.jdatepicker.impl.UtilDateModel"
+		visible="true"
+		class="org.jdatepicker.impl.UtilDateModel"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.JDateComponent_1454258598384"
+		name="JDateComponent"
+		description="Custom component: org.jdatepicker.JDateComponent"
+		visible="true"
+		class="org.jdatepicker.JDateComponent"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.JDateComponentFactory_1454258598384"
+		name="JDateComponentFactory"
+		description="Custom component: org.jdatepicker.JDateComponentFactory"
+		visible="true"
+		class="org.jdatepicker.JDateComponentFactory"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.JDatePanel_1454258598384"
+		name="JDatePanel"
+		description="Custom component: org.jdatepicker.JDatePanel"
+		visible="true"
+		class="org.jdatepicker.JDatePanel"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.JDatePicker_1454258598384"
+		name="JDatePicker"
+		description="Custom component: org.jdatepicker.JDatePicker"
+		visible="true"
+		class="org.jdatepicker.JDatePicker"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addComponent
+		id="org.jdatepicker.util.JDatePickerUtil_1454258598384"
+		name="JDatePickerUtil"
+		description="Custom component: org.jdatepicker.util.JDatePickerUtil"
+		visible="true"
+		class="org.jdatepicker.util.JDatePickerUtil"
+		category="org.eclipse.wb.swing.JGoodies"/>
+	<addCategory
+		id="jcalendarbutton-1.4.5_1454258875193"
+		name="jcalendarbutton-1.4.5"
+		description="Container with import elements from C:\Users\Jake\Documents\GitHub\coursework\8C_Charts\jcalendarbutton-1.4.5.jar"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="net.sourceforge.jcalendarbutton.JCalendarButton_1454258875193"
+		name="JCalendarButton"
+		description="Custom component: net.sourceforge.jcalendarbutton.JCalendarButton"
+		visible="true"
+		class="net.sourceforge.jcalendarbutton.JCalendarButton"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="net.sourceforge.jcalendarbutton.JCalendarPopup_1454258875193"
+		name="JCalendarPopup"
+		description="Custom component: net.sourceforge.jcalendarbutton.JCalendarPopup"
+		visible="true"
+		class="net.sourceforge.jcalendarbutton.JCalendarPopup"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="net.sourceforge.jcalendarbutton.JTimeButton_1454258875193"
+		name="JTimeButton"
+		description="Custom component: net.sourceforge.jcalendarbutton.JTimeButton"
+		visible="true"
+		class="net.sourceforge.jcalendarbutton.JTimeButton"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="net.sourceforge.jcalendarbutton.JTimePopup_1454258875193"
+		name="JTimePopup"
+		description="Custom component: net.sourceforge.jcalendarbutton.JTimePopup"
+		visible="true"
+		class="net.sourceforge.jcalendarbutton.JTimePopup"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarButton_1454258875193"
+		name="JCalendarButton"
+		description="Custom component: org.jbundle.thin.base.screen.jcalendarbutton.JCalendarButton"
+		visible="true"
+		class="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarButton"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup_1454258875193"
+		name="JCalendarPopup"
+		description="Custom component: org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup"
+		visible="true"
+		class="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$1_1454258875193"
+		name="1"
+		description="Custom component: org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$1"
+		visible="true"
+		class="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$1"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$2_1454258875193"
+		name="2"
+		description="Custom component: org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$2"
+		visible="true"
+		class="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$2"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$3_1454258875193"
+		name="3"
+		description="Custom component: org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$3"
+		visible="true"
+		class="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$3"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$4_1454258875193"
+		name="4"
+		description="Custom component: org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$4"
+		visible="true"
+		class="org.jbundle.thin.base.screen.jcalendarbutton.JCalendarPopup$4"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.jbundle.thin.base.screen.jcalendarbutton.JTimeButton_1454258875193"
+		name="JTimeButton"
+		description="Custom component: org.jbundle.thin.base.screen.jcalendarbutton.JTimeButton"
+		visible="true"
+		class="org.jbundle.thin.base.screen.jcalendarbutton.JTimeButton"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.jbundle.thin.base.screen.jcalendarbutton.JTimePopup_1454258875193"
+		name="JTimePopup"
+		description="Custom component: org.jbundle.thin.base.screen.jcalendarbutton.JTimePopup"
+		visible="true"
+		class="org.jbundle.thin.base.screen.jcalendarbutton.JTimePopup"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.sourceforge.jcalendarbutton.JCalendarButton_1454258875193"
+		name="JCalendarButton"
+		description="Custom component: org.sourceforge.jcalendarbutton.JCalendarButton"
+		visible="true"
+		class="org.sourceforge.jcalendarbutton.JCalendarButton"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.sourceforge.jcalendarbutton.JCalendarPopup_1454258875193"
+		name="JCalendarPopup"
+		description="Custom component: org.sourceforge.jcalendarbutton.JCalendarPopup"
+		visible="true"
+		class="org.sourceforge.jcalendarbutton.JCalendarPopup"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.sourceforge.jcalendarbutton.JTimeButton_1454258875193"
+		name="JTimeButton"
+		description="Custom component: org.sourceforge.jcalendarbutton.JTimeButton"
+		visible="true"
+		class="org.sourceforge.jcalendarbutton.JTimeButton"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addComponent
+		id="org.sourceforge.jcalendarbutton.JTimePopup_1454258875193"
+		name="JTimePopup"
+		description="Custom component: org.sourceforge.jcalendarbutton.JTimePopup"
+		visible="true"
+		class="org.sourceforge.jcalendarbutton.JTimePopup"
+		category="jcalendarbutton-1.4.5_1454258875193"/>
+	<addCategory
+		id="JPopupCalendar_1454259336158"
+		name="JPopupCalendar"
+		description="Container with import elements from C:\Users\Jake\Documents\GitHub\coursework\8C_Charts\Library files\JPopupCalendarSWT-V02-02pre_full\JPopupCalendarSWT\lib\JPopupCalendar.jar"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.CalendarNamesUtil_1454259336158"
+		name="CalendarNamesUtil"
+		description="Custom component: net.cwroethel.swt.popupcalendar.CalendarNamesUtil"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.CalendarNamesUtil"
+		category="JPopupCalendar_1454259336158"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DateChooser_1454259336158"
+		name="DateChooser"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DateChooser"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DateChooser"
+		category="JPopupCalendar_1454259336158"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.PopupCalendar_1454259336158"
+		name="PopupCalendar"
+		description="Custom component: net.cwroethel.swt.popupcalendar.PopupCalendar"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.PopupCalendar"
+		category="JPopupCalendar_1454259336158"/>
+	<addCategory
+		id="JPopupCalendar_1454259414222"
+		name="JPopupCalendar"
+		description="Container with import elements from C:\Users\Jake\Documents\GitHub\coursework\8C_Charts\Library files\JPopupCalendarSWT-V02-02pre_full\JPopupCalendarSWT\lib\JPopupCalendar.jar"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.CalendarNamesUtil_1454259414222"
+		name="CalendarNamesUtil"
+		description="Custom component: net.cwroethel.swt.popupcalendar.CalendarNamesUtil"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.CalendarNamesUtil"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DateChooser_1454259414222"
+		name="DateChooser"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DateChooser"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DateChooser"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DateChooser$1_1454259414222"
+		name="1"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DateChooser$1"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DateChooser$1"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DateChooser$2_1454259414222"
+		name="2"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DateChooser$2"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DateChooser$2"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DateChooser$3_1454259414222"
+		name="3"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DateChooser$3"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DateChooser$3"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DateChooserAction_1454259414222"
+		name="DateChooserAction"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DateChooserAction"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DateChooserAction"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DateChooserPanel_1454259414222"
+		name="DateChooserPanel"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DateChooserPanel"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DateChooserPanel"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DateChooserStyle_1454259414222"
+		name="DateChooserStyle"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DateChooserStyle"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DateChooserStyle"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DaySelector_1454259414222"
+		name="DaySelector"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DaySelector"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DaySelector"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DaySelector$1_1454259414222"
+		name="1"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DaySelector$1"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DaySelector$1"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DaySelectorButton_mouseListener_1454259414222"
+		name="DaySelectorButton_mouseListener"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DaySelectorButton_mouseListener"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DaySelectorButton_mouseListener"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DaySelectorStyle_1454259414222"
+		name="DaySelectorStyle"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DaySelectorStyle"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DaySelectorStyle"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.DaySelectorStyleAdapter_1454259414222"
+		name="DaySelectorStyleAdapter"
+		description="Custom component: net.cwroethel.swt.popupcalendar.DaySelectorStyleAdapter"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.DaySelectorStyleAdapter"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.MonthSelector_1454259414223"
+		name="MonthSelector"
+		description="Custom component: net.cwroethel.swt.popupcalendar.MonthSelector"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.MonthSelector"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.MonthSelector$1_1454259414223"
+		name="1"
+		description="Custom component: net.cwroethel.swt.popupcalendar.MonthSelector$1"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.MonthSelector$1"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.MonthSelector$2_1454259414223"
+		name="2"
+		description="Custom component: net.cwroethel.swt.popupcalendar.MonthSelector$2"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.MonthSelector$2"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.MonthSelector$3_1454259414223"
+		name="3"
+		description="Custom component: net.cwroethel.swt.popupcalendar.MonthSelector$3"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.MonthSelector$3"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.MonthSelectorStyle_1454259414223"
+		name="MonthSelectorStyle"
+		description="Custom component: net.cwroethel.swt.popupcalendar.MonthSelectorStyle"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.MonthSelectorStyle"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.MonthSelectorStyleAdapter_1454259414223"
+		name="MonthSelectorStyleAdapter"
+		description="Custom component: net.cwroethel.swt.popupcalendar.MonthSelectorStyleAdapter"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.MonthSelectorStyleAdapter"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.PopupCalendar_1454259414223"
+		name="PopupCalendar"
+		description="Custom component: net.cwroethel.swt.popupcalendar.PopupCalendar"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.PopupCalendar"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.PopupCalendar$1_1454259414223"
+		name="1"
+		description="Custom component: net.cwroethel.swt.popupcalendar.PopupCalendar$1"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.PopupCalendar$1"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.PopupCalendar$2_1454259414223"
+		name="2"
+		description="Custom component: net.cwroethel.swt.popupcalendar.PopupCalendar$2"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.PopupCalendar$2"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.PopupShellManager_1454259414223"
+		name="PopupShellManager"
+		description="Custom component: net.cwroethel.swt.popupcalendar.PopupShellManager"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.PopupShellManager"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.PopupShellManager$1_1454259414223"
+		name="1"
+		description="Custom component: net.cwroethel.swt.popupcalendar.PopupShellManager$1"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.PopupShellManager$1"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.TodaySelector_1454259414223"
+		name="TodaySelector"
+		description="Custom component: net.cwroethel.swt.popupcalendar.TodaySelector"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.TodaySelector"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.TodaySelector$1_1454259414223"
+		name="1"
+		description="Custom component: net.cwroethel.swt.popupcalendar.TodaySelector$1"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.TodaySelector$1"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.TodaySelectorStyle_1454259414223"
+		name="TodaySelectorStyle"
+		description="Custom component: net.cwroethel.swt.popupcalendar.TodaySelectorStyle"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.TodaySelectorStyle"
+		category="JPopupCalendar_1454259414222"/>
+	<addComponent
+		id="net.cwroethel.swt.popupcalendar.TodaySelectorStyleAdapter_1454259414223"
+		name="TodaySelectorStyleAdapter"
+		description="Custom component: net.cwroethel.swt.popupcalendar.TodaySelectorStyleAdapter"
+		visible="true"
+		class="net.cwroethel.swt.popupcalendar.TodaySelectorStyleAdapter"
+		category="JPopupCalendar_1454259414222"/>
+</commands>

@@ -1,0 +1,106 @@
+ChangeLog:
+
+
+12/17/05
+  o Removed the DateSelectionListener again. Instead PopupCalendar now
+    uses SelectionEvents/SelectionListener to notify that a date was selected.
+    
+  o DateChooser is now a fully functional widget on it's own.
+  
+  o Removed all memory leaks caused by not disposing graphics objects 
+    (custom colors and fonts).
+    
+  o Added a PopupShellManager, which allows to simply add the same popup
+    functionality to any widget. It provides and manages a popup shell 
+    which then can be used like any other shell.
+
+  o Sped up updating of the popup calendar by a factor ~6-7. Changing months 
+    now takes ~10ms on my 1.5Mhz P-IV laptop.
+    
+  o Changed to package name to net.cwroethel.swt.popupcalendar for the swt 
+    release.
+    
+  o Added additional examples for using the PopupShellManager and the standalone
+    DateChooser.
+     
+
+12/12/05
+PopupCalendar:
+
+  o Renamed JPopupCalendar to PopupCalendar.
+  
+  o Changed Constructor parameters to be more SWT like:
+       PopupCalendar(Shell shell, int style);
+     or 
+       PopupCalendar(Shell shell, int style, Locale locale);
+       
+       
+  o Style definition:
+     - style options in PopupCalendar now include positioning of the 
+       popup window relative to a composite. Allowed parameters for 
+       positioning are: 
+         PopupCalendar.LEFT, PopupCalendar.RIGHT, PopupCalendar.CENTER
+         or the equivalent styles in SWT, e.g. SWT.RIGHT.
+       and for selecting which calendar components to show:
+         PopupCalendar.SHOWTODAY, PopupCalendar.SHOWMONTH, 
+         PopupCalendar.SHOWALL.
+         Use bitwise or (|) to select more than one option.
+                 
+  o DateSelectionEvents/DateSelectionListener now instead of the 
+    ActionListener/ActionEvents. This makes it now a 'pure' SWT 
+    implementation.
+
+  o added methods: showMonthSelector and showTodaySelector to hide direct
+    access to DateChooser instance data. DateChooser.showMonthSelector and
+    DateChooser.showTodaySelector are now private. However selecting the 
+    components can now be made with the style parameter in the constructor.   
+
+  o added methods resetDates() and resetSelectedDate() to managed the 
+    displayed date and selected date of DateChooser.
+ 
+  o Removed options to automatically reset the current and selected dates
+    (former options RESET_AT_SHOW and SAVE_SELECTED_DATE. Instead the 
+    resetDates() and resetSelectedDate() methods should be used.
+     
+  o added an additional open() method. This method takes the a control only
+    and uses the style defined in the constructor to place the popup window.
+ 
+  o Cleaned up the looks of the calendar a bit. The calendar is now a bit
+    more compact in it's appearance without making it actually smaller.
+    
+  
+DateChooser:       
+  o Style definition now takes PopupCalendar.SHOWALL, 
+        PopupCalendar.SHOWMONTH and PopupCalendar.SHOWTODAY.
+        
+ 
+ Updating from previous versions:
+   For typical users:
+     o Update your constructor. Use the style PopupCalendar.SHOWALL if 
+       you're not sure which style to select.
+       
+     o Update the listener: 
+       Replace popupCal.addActionListener(new ActionListener() {
+         public void actionPerformed(ActionEvent e) { 
+         ...
+       with 
+       popupCal.addDateSelectionListener(new DateSelectionListener() {
+         public void dateSelected(DateSelectionEvent e) {
+         ...
+         
+      Everything else should stay the same, i.e. the DateSelectionEvent is
+      similar enough to ActionEvent to avoid further changes.
+      
+    o replace calendar component selections using instance date, e.g. 
+        ...
+        popupCal.showMonthSelector = false;
+        ...
+      with the method with the same name:
+        ...
+        popupCal.showMonthSelector(false);
+        ...
+      or better even use the style option in the constructor.
+ 
+    o reset the dates yourself if you were using the RESET_AT_SHOW 
+      and SAVE_SELECTED_DATE options.  
+   

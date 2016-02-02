@@ -1,0 +1,256 @@
+
+<project name="net.cwroethel.swt.popupcalendar" default="makejar" basedir=".">
+   <description>Ant buildfile for JPopupCalendar</description>
+
+   <!-- This sets the location of the swt.jar file. Please change that to
+   the appropriate location -->
+   <property name="swtdir" value="C:\Java\SWT\swt-3.1"/>
+   <property name="swtjar" value="${swtdir}\swt.jar"/>
+
+   <!-- Changes below this line at your own risk! -->
+
+   <!-- Set the remaining properties -->
+   <property name="package" value="net/cwroethel/swt/popupcalendar"/>
+   <property name="classes" value="./classes"/>
+   <property name="distbase" value="JPopupCalendarSWT-V00-00"/>
+   <property name="distbaseFull" value="JPopupCalendarSWT-V00-00_full"/>
+   <property name="distTmp" value="JPopupCalendarSWT"/>
+
+   <!-- set the classpath -->
+   <path id="JPopupCalendar.class.path">
+      <pathelement path="${classpath}"/>
+      <pathelement location="lib/JPopupCalendarSWT.jar"/>
+      <pathelement location="${swtjar}"/>
+      <pathelement path="./"/>
+   </path>
+
+   <!-- initialize -->
+   <target name="init">
+      <tstamp/>
+      <mkdir dir="${classes}"/>
+      <mkdir dir="lib"/>
+   </target>
+
+
+   <!-- check if the classes directory exists -->
+   <target name="check_classes">
+      <available file="${classes}" type="dir"
+      property="classesExists"/>
+   </target>
+
+
+   <!-- build the class files -->
+   <target name="compile" depends="init"
+         description="Compile JPopupCalendar class files ">
+      <javac srcdir="./src/${package}"
+            destdir="${classes}"
+            target="1.3"
+            source="1.3"
+      		debug="true">
+         <classpath refid="JPopupCalendar.class.path"/>
+         <include name="*.java"/>
+      </javac>
+      <copy todir="./${classes}/${package}">
+         <fileset dir="./src/${package}" includes="*.gif"/>
+      </copy>
+   </target>
+
+
+   <!-- tar'em up... I mean jar em up -->
+   <target name="makejar" depends="compile"
+         description="Create the jar file">
+      <jar destfile="lib/JPopupCalendar.jar" basedir="./${classes}"/>
+   </target>
+
+
+   <!-- remove the pesky backup files from various editors -->
+   <target name="cleanupBak" description="remove old backup files">
+      <delete>
+         <fileset defaultexcludes="false" dir="./src/${package}/" includes="*~" />
+         <fileset defaultexcludes="false" dir="./" includes="*~" />
+      </delete>
+   </target>
+
+
+   <!-- remove the .class files -->
+   <target name="clean" depends="check_classes" description="remove the class files"
+   if="classesExists">
+      <delete dir="${classes}"/>
+   </target>
+
+
+   <!-- remove the class files and the jar file -->
+   <target name="distclean" depends="clean" description="remove all unnecessary files and gets the source ready for check in">
+      <delete dir="lib"/>
+      <delete dir="docs/javadocs"/>
+      <delete>
+         <fileset dir="./samples" includes="*.class"/>
+      </delete>
+   </target>
+
+
+   <!-- create the javadocs -->
+   <target name="javadocs" description="Create the java docs">
+      <mkdir dir="docs/javadocs"/>
+      <javadoc packagenames="net.cwroethel.swt.popupcalendar" sourcepath="src"
+      author="true" destdir="docs/javadocs"/>
+   </target>
+
+
+
+   <!-- check if the temporary release directory exists -->
+   <target name="check_distTmp">
+      <available file="${distTmp}" type="dir"
+      property="distTmpExists"/>
+   </target>
+
+   <!-- remove the temporary release directory -->
+   <target name="distTmpClean" depends="check_distTmp"
+   description="remove the temporary distribution directory" if="distTmpExists">
+      <delete dir="${distTmp}"/>
+   </target>
+
+
+   <!--
+
+   CREATE THE FULL DISTRIBUTIOON
+
+   -->
+
+   <!-- Create a full distribution - includes the source files -->
+   <target name="fulldist" depends="distclean,cleanupBak,makejar,javadocs,distTmpClean">
+      <echo>
+      Creating full distribution.
+      </echo>
+
+      <!-- Remove leftovers from previous build attemts etc. -->
+      <delete>
+         <fileset dir="." includes="${distbaseFull}.zip,${distbaseFull}.tar.gz"/>
+      </delete>
+      <mkdir dir="${distTmp}"/>
+
+
+      <!-- copy the src, sample, lib and javadocs directories -->
+      <copy todir="${distTmp}/src">
+         <fileset dir="src/">
+            <include name="${package}/*.java"/>
+            <include name="${package}/*.gif"/>
+         </fileset>
+      </copy>
+
+      <copy todir="${distTmp}/samples">
+         <fileset dir="samples/">
+            <include name="*.java"/>
+            <include name="*.xml"/>
+         </fileset>
+      </copy>
+
+
+      <copy todir="${distTmp}/lib">
+         <fileset dir="lib">
+            <include name="*.jar"/>
+         </fileset>
+      </copy>
+
+      <!-- Copy documentation -->
+      <copy todir="${distTmp}/docs/javadocs">
+         <fileset dir="docs/javadocs">
+            <include name="**"/>
+         </fileset>
+      </copy>
+
+      <!-- Copy README and LICENSE -->
+      <copy todir="${distTmp}" file="README.txt"/>
+      <copy todir="${distTmp}" file="LICENSE.txt"/>
+      <copy todir="${distTmp}" file="build.xml"/>
+      <copy todir="${distTmp}" file="Changes.txt"/>
+
+      <!-- Create a tar.gz file -->
+      <tar longfile="gnu" tarfile="${distbaseFull}.tar">
+         <tarfileset dir=".">
+            <include name="${distTmp}/**"/>
+         </tarfileset>
+      </tar>
+
+      <gzip zipfile="${distbaseFull}.tar.gz" src="${distbaseFull}.tar"/>
+      <delete file="${distbaseFull}.tar"/>
+
+      <!-- Create a zip file -->
+      <zip zipfile="${distbaseFull}.zip">
+         <zipfileset dir=".">
+            <include name="${distTmp}/**"/>
+         </zipfileset>
+      </zip>
+
+      <delete dir="${distTmp}"/>
+   </target>
+
+   <!--
+
+   CREATE THE BINARY DISTRIBUTIOON
+   (contains only the jar file, the docs and the samples)
+
+   -->
+
+   <!-- Create a full distribution - includes the source files -->
+   <target name="bindist" depends="distclean,cleanupBak,makejar,javadocs,distTmpClean">
+      <echo>
+      Creating binary distribution.
+      </echo>
+
+      <!-- Remove leftovers from previous build attemts etc. -->
+      <delete>
+         <fileset dir="." includes="${distbase}.zip,${distbase}.tar.gz"/>
+      </delete>
+      <mkdir dir="${distTmp}"/>
+
+
+      <!-- copy the sample, lib and javadocs directories -->
+      <copy todir="${distTmp}/samples">
+         <fileset dir="samples/">
+            <include name="*.java"/>
+            <include name="*.xml"/>
+         </fileset>
+      </copy>
+
+
+      <copy todir="${distTmp}/lib">
+         <fileset dir="lib">
+            <include name="*.jar"/>
+         </fileset>
+      </copy>
+
+      <!-- Copy documentation -->
+      <copy todir="${distTmp}/docs/javadocs">
+         <fileset dir="docs/javadocs">
+            <include name="**"/>
+         </fileset>
+      </copy>
+
+      <!-- Copy README and LICENSE -->
+      <copy todir="${distTmp}" file="README.txt"/>
+      <copy todir="${distTmp}" file="LICENSE.txt"/>
+      <copy todir="${distTmp}" file="Changes.txt"/>
+      <copy todir="${distTmp}" file="build.xml"/>
+
+      <!-- Create a tar.gz file -->
+      <tar longfile="gnu" tarfile="${distbase}.tar">
+         <tarfileset dir=".">
+            <include name="${distTmp}/**"/>
+         </tarfileset>
+      </tar>
+
+      <gzip zipfile="${distbase}.tar.gz" src="${distbase}.tar"/>
+      <delete file="${distbase}.tar"/>
+
+      <!-- Create a zip file -->
+      <zip zipfile="${distbase}.zip">
+         <zipfileset dir=".">
+            <include name="${distTmp}/**"/>
+         </zipfileset>
+      </zip>
+      <delete dir="${distTmp}"/>
+   </target>
+</project>
+
+
